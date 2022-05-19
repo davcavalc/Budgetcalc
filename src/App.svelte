@@ -1,11 +1,15 @@
 <script>
+import Title from './title.svelte';
 import Navbar from "./navbar.svelte";
-import Title from "./title.svelte";
+let myFruits = ['apple', 'orange', 'lemon'];
 </script>
 
-<Navbar titleApp="Budget Calculator" buttonAddItem="add item"/>
-<Title title="add expense" />
-<Title title="expense list" />
 
-<style>
-</style>
+<Navbar titleApp="Budget Calculator" buttonAddItem="add item"/>
+<!-- Each method -->
+{#each myFruits as item}
+    <Title title={item}/>    
+{/each}
+
+
+

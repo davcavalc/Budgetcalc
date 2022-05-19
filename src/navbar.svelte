@@ -10,4 +10,4 @@
         <i class="far fa-plus-square">{buttonAddItem}</i>
       </button>
     </div>
-  </nav>
+</nav>
