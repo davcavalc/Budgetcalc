@@ -1,6 +1,6 @@
 <script>
-  export let titleApp;
-  export let buttonAddItem;
+  export let titleApp = "Budget Calculator";
+  export let buttonAddItem = "Add Item";
 </script>
 
 <nav class="nav">
