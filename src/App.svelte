@@ -1,13 +1,14 @@
 <script>
-    import Navbar from "./navbar.svelte";
-    import expensesData from './expenses';
-    let expenses = [...expensesData];
-    console.log(expenses);
+  //components
+  import Navbar from "./navbar.svelte";
+  import ExpensesList from "./ExpensesList.svelte";
+  //data
+  import expensesData from "./expenses";
+  //variables
+  let expenses = [...expensesData];
 </script>
 
-
 <Navbar />
-
-
-
-
+<main class="content">
+  <ExpensesList {expenses} />
+</main>//TODO Parei na aula 19
