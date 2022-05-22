@@ -11,4 +11,4 @@
 <Navbar />
 <main class="content">
   <ExpensesList {expenses} />
-</main>//TODO Parei na aula 19
+</main>
