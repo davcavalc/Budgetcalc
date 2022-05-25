@@ -2,14 +2,17 @@
   export let id;
   export let name = "";
   export let amount = 0;
-  let displayAmount = false;//TODO parei na aula 22
+  let displayAmount = true;
+  function toggleAmount() {
+    displayAmount = !displayAmount;//TODO parei na aula 22
+  }
 </script>
 
 <article class="single-expense">
   <div class="expense-info">
     <h2>
       {name}
-      <button class="amount-btn">
+      <button class="amount-btn" on:click|once={toggleAmount}>
         <i class="fas fa-caret-down" />
       </button>
     </h2>
