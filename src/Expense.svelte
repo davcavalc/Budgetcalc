@@ -4,7 +4,7 @@
   export let amount = 0;
   let displayAmount = true;
   function toggleAmount() {
-    displayAmount = !displayAmount;//TODO parei na aula 22
+    displayAmount = !displayAmount;//TODO parei na aula 24
   }
 </script>
 
