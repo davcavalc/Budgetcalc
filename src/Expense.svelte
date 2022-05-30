@@ -8,7 +8,7 @@
     displayAmount = !displayAmount;
   }
 
-  const removeExpense = getContext("remove");
+  const { removeExpense } = getContext("remove");
 </script>
 
 <article class="single-expense">
