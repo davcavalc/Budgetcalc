@@ -17,7 +17,7 @@
         {#each expenses as expense, index}
             <Expense {...expense} on:delete/>
             {:else}
-            <h2>currently tou have no expenses</h2>
+            <h2>no expenses added to the list</h2>
         {/each}
     </ul>
 </section>

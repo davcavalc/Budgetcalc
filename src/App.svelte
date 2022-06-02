@@ -18,6 +18,10 @@
     console.log(name);
     removeExpense(id);
   }
+
+  function clearExpenses(){
+    expenses = [];
+  }
   //context
   setContext("remove", removeExpense);
 </script>
@@ -25,4 +29,9 @@
 <Navbar />
 <main class="content">
   <ExpensesList {expenses} on:delete={deleteExpense}/>
+  <button type="button" class="btn btn-primary btn-block" on:click={clearExpenses}>
+    clear expenses
+  </button>
 </main>
+
+<!-- TODO parei na aula "Clear Expenses Button" -->
